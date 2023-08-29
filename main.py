@@ -7,7 +7,7 @@ ComputerWins = 0
 
 
 # Functions
-def validateinput(string):
+def validate_input(string):
     if string not in Options:
         raise Exception("Invalid Input")
     else:
@@ -37,7 +37,7 @@ while True:
     if player_input == "Q":
         break
     else:
-        validateinput(player_input)
+        validate_input(player_input)
         result = compare(player_input, computer_input())
     if result == 0:
         print("Tie")
